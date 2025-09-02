@@ -3,6 +3,11 @@
   "bugs": {
     "url": "https://github.com/ai-shifu/remark-flow/issues"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "unist": "^0.0.1",
     "unist-util-visit": "^5.0.0"
@@ -13,6 +18,8 @@
     "@types/unist": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "husky": "^9.1.7",
@@ -55,6 +62,7 @@
   },
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
+    "commit": "cz",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint --max-warnings 10",
