@@ -62,5 +62,5 @@ exclude:
 
 # CHANGELOG.md specific rules
 files:
-  "CHANGELOG.md":
+  'CHANGELOG.md':
     MD001: false # Allow heading level increments for standard-version format
